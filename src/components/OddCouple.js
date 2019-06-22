@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import Pattern from '../styles/Pattern';
+import Child from './Child'
 
 // function oddOrCouple(num) {
 //     if(num % 2 == 0) {
@@ -14,14 +15,24 @@ import Pattern from '../styles/Pattern';
  * 
  * @comment esta maneira se mostrou muito mais rápido
  */
-function oddOrCouple(num) {
-    const v = num % 2 === 0 ? 'Par' : 'Ímpar';
-    return <Text style={Pattern.ex}>{v}</Text>
-}
+// function oddOrCouple(num) {
+//     const v = num % 2 === 0 ? 'Par' : 'Ímpar';
+//     return <Text style={Pattern.ex}>{v}</Text>;
+// }
 
 export default props =>
     <View>
-        {oddOrCouple(props.num)}
+        <Child test={props.num % 2 === 0} >
+            <Text style={Pattern.ex}>PAR</Text>
+        </Child>
+        <Child test={props.num % 2 === 1} >
+            <Text style={Pattern.ex}>ÍMPAR</Text>
+        </Child>
+        
+        
+        {/* {oddOrCouple(props.num)} */}
+
+
 
         {/* {
             props.num % 2 == 0
