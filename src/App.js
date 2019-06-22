@@ -20,7 +20,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Simple text='Flexível!!!'/>
-        <OddCouple num={12}></OddCouple>
+        <OddCouple num={11}></OddCouple>
       </View>
     )
   }
