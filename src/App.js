@@ -4,6 +4,8 @@ import { View, StyleSheet } from 'react-native';
 import Simple from './components/Simple';
 import OddCouple from './components/OddCouple';
 
+// https://github.com/netogerbi/react-native-basics
+
 // export default function() {
 //   return (
 //     <View style={styles.container}>
@@ -18,7 +20,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Simple text='Flexível!!!'/>
-        <OddCouple num={11}></OddCouple>
+        <OddCouple num={12}></OddCouple>
       </View>
     )
   }
