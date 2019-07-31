@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native';
 
 import Simple from './components/Simple';
 import OddCouple from './components/OddCouple';
-import Inverse, { MegaSenha } from './components/Multi';
+import Inverse, { MegaSena } from './components/Multi';
 
 // https://github.com/netogerbi/react-native-basics
 
@@ -23,7 +23,7 @@ export default class App extends React.Component {
         <Simple text='Flexível!!!'/>
         <OddCouple num={11} />
         <Inverse text="React Nativo!!!"/>
-        <MegaSenha numeros={8} />
+        <MegaSena numeros={8} />
       </View>
     )
   }

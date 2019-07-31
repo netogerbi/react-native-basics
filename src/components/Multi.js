@@ -7,7 +7,7 @@ const Inverse = props => {
     return <Text style={Pattern.ex}>{inv}</Text>;
 }
 
-const MegaSenha = props => {
+const MegaSena = props => {
     const [min, max] = [1, 60];
     const numeros = Array(props.numeros || 6).fill(0);
 
@@ -22,5 +22,5 @@ const MegaSenha = props => {
     return <Text style={Pattern.ex}>{numeros.join(', ')}</Text>
 }
 
-export { Inverse, MegaSenha } //deve ser importado usando chaves { x }
+export { Inverse, MegaSena } //deve ser importado usando chaves { x }
 export default Inverse; // Permite importar sem as chaves devido ao 'default'

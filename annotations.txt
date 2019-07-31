@@ -1,0 +1,6 @@
+### instalar o react native
+$ npm i -g create-react-native-app
+
+### rodar o app no emulador
+$ react-native run-android
+
