@@ -4,3 +4,10 @@ $ npm i -g create-react-native-app
 ### rodar o app no emulador
 $ react-native run-android
 
+########### EXPO ##############
+
+$expo init AwesomeProject
+
+$cd AwesomeProject
+$npm start 
+# you can also use: expo start
