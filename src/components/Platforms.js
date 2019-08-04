@@ -1,4 +1,4 @@
-import { React } from "react";
+import React from "react";
 import { Platform, Button, Alert, ToastAndroid } from "react-native";
 
 export default props => {

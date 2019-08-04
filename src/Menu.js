@@ -5,10 +5,14 @@ import Simple from './components/Simple';
 import OddCouple from './components/OddCouple';
 import Inverse, { MegaSena } from './components/Multi';
 import Counter from './components/Counter';
-import { Platforms } from "./components/Platforms";
+import Platforms from "./components/Platforms";
+import PropsValidation from "./components/PropsValidation";
 
 //criação do menu
 export default createDrawerNavigator({
+    PropsValidation: {
+        screen: () => <PropsValidation label="Year: " year={19} />
+    },
     Platforms: {
         screen: Platforms
     },
