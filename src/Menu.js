@@ -5,11 +5,12 @@ import Simple from './components/Simple';
 import OddCouple from './components/OddCouple';
 import Inverse, { MegaSena } from './components/Multi';
 import Counter from './components/Counter';
-import Platforms from './components/Platforms';
+import { Platforms } from "./components/Platforms";
+
 //criação do menu
 export default createDrawerNavigator({
-    Platform: {
-        screen: () => Platforms
+    Platforms: {
+        screen: Platforms
     },
     Counter: {
         screen: () => <Counter initialNumber={100} />, // retorna o componente

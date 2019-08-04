@@ -1,3 +1,5 @@
+REACT NATIVE TUTO - BY N37O C0D3R
+
 ### instalar o react native
 $ npm i -g create-react-native-app
 
@@ -11,3 +13,4 @@ $expo init AwesomeProject
 $cd AwesomeProject
 $npm start 
 # you can also use: expo start
+
