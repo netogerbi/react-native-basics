@@ -8,10 +8,15 @@ import Counter from './components/Counter';
 import Platforms from "./components/Platforms";
 import PropsValidation from "./components/PropsValidation";
 import Events from "./components/Events";
+import Grandfather from './components/HeritanceComunication';
 
 
 //criação do menu
 export default createDrawerNavigator({
+    Grandfather: {
+        screen: () => <Grandfather name='Osvaldo' secondName='Candido da Silveira' />,
+        navigationOptions: { title: 'Família' }
+    },
     Events: {
         screen: Events, // nao precisa de parametro, pode ser somente nome do componente
         navigationOptions: { title: 'Eventos' }
